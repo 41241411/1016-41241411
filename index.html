@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 導航列 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">我的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">關於我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">作品展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">聯繫我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+        <img src="幻燈片/工作區域 1.png" class="image" alt="Image 1"> 
+        <img src="https://fakeimg.pl/1500x200/949089/" class="image" alt="Image 2"> 
+        <img src="幻燈片/工作區域 2.png" class="image" alt="Image 3"> 
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="幻燈片/工作區域 3.png" class="d-block w-100" alt="Image 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>作品展示</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="幻燈片/工作區域 4.png" class="d-block w-100" alt="Image 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>剪刀石頭布</h5>
+                    <p>比賽採用三戰兩勝制，同時在側邊顯示歷史紀錄。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="幻燈片/工作區域 5.png" class="d-block w-100" alt="Image 6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>記憶大考驗</h5>
+                    <p>在開始前選擇主題和尺寸，並記錄遊戲持續時間。</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- 嵌入3个YouTube影片区域 -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- 第一个影片 -->
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="PM5V3P_iDAk">
+                            <img src="https://img.youtube.com/vi/PM5V3P_iDAk/0.jpg" class="img-fluid"
+                                alt="YouTube video thumbnail">
+                        </button>
+                    </div>
+                </div>
+                <!-- 第二个影片 -->
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="AZQONwyI5IE">
+                            <img src="https://img.youtube.com/vi/AZQONwyI5IE/0.jpg" class="img-fluid"
+                                alt="YouTube video thumbnail">
+                        </button>
+                    </div>
+                </div>
+                <!-- 第三个影片 -->
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="2WzKKHb32gA">
+                            <img src="https://img.youtube.com/vi/2WzKKHb32gA/0.jpg" class="img-fluid"
+                                alt="YouTube video thumbnail">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 模态框 -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">影片播放</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="videoPlayer" src="" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 自我介紹區域 -->
+    <header class="hero" id="about">
+        <div class="container text-center">
+            <h1>你好！我是 游恩綺</h1>
+            <p>一名就讀於虎尾科技大學的學生</p>
+            <a href="portfolio.html" class="btn btn-primary">查看我的作品</a>
+            <a href="contact.html" class="btn btn-secondary">聯繫我</a>
+        </div>
+    </header>
+
+    <footer class="text-center py-1">
+        <p>&copy; 2024 游恩綺. 版權所有.</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" class="text-decoration-none me-3">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/facebook.svg" alt="Facebook" width="24"
+                    height="24">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-decoration-none me-3">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/twitter.svg" alt="Twitter" width="24"
+                    height="24">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none me-3">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/linkedin.svg" alt="LinkedIn" width="24"
+                    height="24">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/instagram.svg" alt="Instagram" width="24"
+                    height="24">
+            </a>
+        </div>
+    </footer>
+    <!-- 自定义脚本 -->
+    <script>
+        // 处理模态框打开事件
+        $('#videoModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // 按钮
+            var videoId = button.data('video'); // 从按钮中获取视频ID
+            var videoSrc = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1'; // 设置视频链接
+            var modal = $(this);
+            modal.find('#videoPlayer').attr('src', videoSrc); // 更新模态框中的视频源
+        });
+
+        // 处理模态框关闭事件
+        $('#videoModal').on('hidden.bs.modal', function (event) {
+            var modal = $(this);
+            modal.find('#videoPlayer').attr('src', ''); // 清空视频源
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+  background-color: #949089;
+  color: white;
+}
+
+.hero {
+  height: 50vh;
+  background: url('your-image-url.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #949089;
+  height: 40px;
+  /* 设置导航栏高度 */
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+}
+
+.navbar .navbar-brand {
+  padding-left: 20px;
+  /* 调整品牌名称的左右间距 */
+}
+
+.carousel-item img {
+  width: auto;
+  /* 保持图片的原始宽度 */
+  height: auto;
+  /* 保持图片的原始高度 */
+  max-width: 80%;
+  /* 确保图片不超出容器宽度 */
+  max-height: 100vh;
+  /* 确保图片不超出视窗的高度 */
+  object-fit: contain;
+  /* 确保图片保持比例，并在容器内完整显示 */
+  margin: 0 auto;
+  /* 将图片居中 */
+}
+.slideshow-container {
+  display: flex;
+  /* 使用 Flexbox 使图片横向排列 */
+  flex-direction: column;
+  /* 垂直方向排列 */
+  height: 100vh;
+  /* 使容器占满整个视口 */
+  overflow-y: scroll;
+  /* 允许竖向滚动 */
+  scroll-behavior: smooth;
+  /* 平滑滚动效果 */
+}
+
+.slideshow-container::-webkit-scrollbar {
+  display: none;
+  /* 隐藏滚动条 */
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  /* 每张图片占满视口 */
+  object-fit: cover;
+  /* 覆盖图片 */
+}
+/*幻燈片字體*/
+/* 更改 .carousel-caption 内文字的字体样式 */
+.carousel-caption {
+  font-family: 'Noto Sans TC', sans-serif;
+  /* 设置字体为正黑体 */
+  color: rgb(0, 0, 0);
+  /* 字体颜色 */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  /* 添加文字阴影，增强可读性 */
+}
+
+/* 更改 h5 的字体大小 */
+.carousel-caption h5 {
+  font-size: 40px;
+  /* 更改 h5 的字体大小 */
+  font-weight: bold;
+  /* 设置字体加粗 */
+  margin-bottom: 10px;
+  /* 控制标题和描述之间的距离 */
+}
+
+/* 更改 p 的字体大小 */
+.carousel-caption p {
+  font-size: 32px;
+  /* 更改 p 的字体大小 */
+  line-height: 1.5;
+  /* 行高调整 */
+}
+
+.modal-title {
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #949089;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+  /* 调整上下内边距为 10px */
+  z-index: 10;
+  /* 确保不会被其他元素遮挡 */
+}
