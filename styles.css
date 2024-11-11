@@ -116,3 +116,63 @@ footer {
   z-index: 10;
   /* 确保不会被其他元素遮挡 */
 }
+
+.container {
+  width: 90%;
+}
+.custom-1 {
+  font-size: 80px;
+  /* 設置字體大小為60px */
+  font-weight: 100;
+}
+
+.custom-2 {
+  font-size: 38px;
+  /* 設置字體大小為60px */
+  font-weight: 100;
+}
+
+.custom-3 {
+  font-size: 25px;
+  /* 設置字體大小為60px */
+  font-weight: 100;
+  letter-spacing: 4px;
+  /* 設置字距為2px */
+  transform: scaleY(0.9);
+  /* 垂直放大1.2倍 */
+  display: inline-block;
+  /* 為了使 transform 生效，需設置為 inline-block */
+}
+
+.rounded-bar {
+  background-color: rgb(0, 159, 223);
+  border-radius: 15px;
+  /* 圓角半徑 */
+  color: white;
+  /* 字體顏色 */
+  padding-left: 10px;
+  /* 左側內邊距 */
+  position: relative;
+  /* 為了使用絕對定位 */
+  margin-bottom: 10px;
+  /* 每個長條底部的間距 */
+}
+
+.rounded-bar::after {
+  content: attr(data-value);
+  /* 使用 data-value 屬性顯示數值 */
+  position: absolute;
+  right: 10px;
+  /* 調整數值位置 */
+  top: 50%;
+  transform: translateY(50%);
+  /* 垂直居中 */
+}
+
+.percentage {
+  color: black;
+  /* 设置文字颜色 */
+  /* 根据需要设置字体样式 */
+  margin-left: 20px;
+  /* 与进度条的间距 */
+}
